@@ -74,6 +74,13 @@ btn3.addEventListener('mouseout', e=> {
 
 });
 
+btn3.addEventListener('click', function(e){
+    console.log("Yes I am only a pickle, I know. ")
+    const newLi = document.createElement("li");
+    newLi.innerHTML="I get it I am a pickle. My life is sad and I can't even feel a tickle. When I grew up I was taken from mom and dad. The gardener thought it wouldn't hurt, but it did, very bad. I wish I was a human, get things I never had. While you're a human you do much, so be very glad. Pickle this Pickle that. How about you just Pickle on someone your own size.";
+    list.appendChild(newLi);
+});
+
 btn2.addEventListener('mouseover', e=> {
     myBigButton.style.backgroundColor='blue';
     myBigButton.style.borderRadius='50%';
