@@ -58,9 +58,21 @@ hello("max")
 //const list = document.querySelector('#list');
 console.log(list);
 list.lastElementChild.style.color = 'blue';
+myBigButton.style.borderRadius='50%';
+pickleButton.style.borderRadius='30%';
+pickleButton.style.backgroundColor='green';
 
 const btn = document.getElementById('myButton');
 const btn2 = document.getElementById('myBigButton');
+const btn3 = document.getElementById('pickleButton');
+
+btn3.addEventListener('mouseover', e=> {
+    pickleButton.style.backgroundColor='lime';
+});
+btn3.addEventListener('mouseout', e=> {
+    pickleButton.style.backgroundColor='green';
+
+});
 
 btn2.addEventListener('mouseover', e=> {
     myBigButton.style.backgroundColor='blue';
