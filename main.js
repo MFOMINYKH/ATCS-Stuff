@@ -77,9 +77,11 @@ btn3.addEventListener('mouseout', e=> {
 btn3.addEventListener('click', function(e){
     console.log("Yes I am only a pickle, I know. ")
     const newLi = document.createElement("li");
-    newLi.innerHTML="I get it I am a pickle. My life is sad and I can't even feel a tickle. When I grew up I was taken from mom and dad.  The gardener thought it wouldn't hurt, but it did, very bad. I wish I was a human, get things I never had. While you're a human you do much, so be very glad. Pickle this Pickle that. How about you just Pickle on someone your own size.";
+    newLi.innerHTML="I get it I am a pickle. My life is sad and I can't even feel a tickle. When I grew up I was taken from mom and dad. The gardener thought it wouldn't hurt, but it did, very bad. I wish I was a human, get things I never had. While you're a human you do much, so be very glad. Pickle this Pickle that. How about you just Pickle on someone your own size.";
     list.appendChild(newLi);
 });
+
+
 
 btn2.addEventListener('mouseover', e=> {
     myBigButton.style.backgroundColor='blue';
@@ -89,6 +91,30 @@ btn2.addEventListener('mouseover', e=> {
 btn2.addEventListener('mouseout', e=> {
     myBigButton.style.backgroundColor='#EFEFEF';
     myBigButton.style.color='black';
+
+});
+
+let colorCounter = 0;
+
+btn2.addEventListener('click', function(e){
+    if(colorCounter === 0)
+        nameOnTop.style.backgroundColor='white';   
+    if(colorCounter === 1)
+        nameOnTop.style.backgroundColor='red';
+    if(colorCounter === 2)
+        nameOnTop.style.backgroundColor='orange';
+    if(colorCounter === 3)
+        nameOnTop.style.backgroundColor='yellow';
+    if(colorCounter === 4)
+        nameOnTop.style.backgroundColor='green';
+    if(colorCounter === 5)
+        nameOnTop.style.backgroundColor='blue';
+    if(colorCounter === 6) {
+        nameOnTop.style.backgroundColor='purple';
+        colorCounter = -1;
+    }
+
+    colorCounter++;
 
 });
 
