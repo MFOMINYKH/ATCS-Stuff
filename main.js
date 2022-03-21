@@ -65,11 +65,26 @@ pickleButton.style.backgroundColor='green';
 const btn = document.getElementById('myButton');
 const btn2 = document.getElementById('myBigButton');
 const btn3 = document.getElementById('pickleButton');
+const btn4 = document.getElementById('doNotClick');
+
+btn4.addEventListener('mouseover', e=> {
+    doNotClick.style.backgroundImage= "linear-gradient(to bottom right, red, white)";
+});
+btn4.addEventListener('mouseout', e=> {
+    doNotClick.style.backgroundImage="linear-gradient(to bottom right, white, red)";
+    doNotClick.style.backgroundColor='yellow';
+
+});
+
+btn4.addEventListener('click', function(e){
+    window.open("https://www.google.com/search?q=iron+man+dies&rlz=1C5GCEM_enUS949US951&oq=iron+man+dies&aqs=chrome..69i57j0i131i433i512l2j69i60l3j69i65j69i60.1753j0j7&sourceid=chrome&ie=UTF-8&safe=active&ssui=on", "_blank");
+});
 
 btn3.addEventListener('mouseover', e=> {
-    pickleButton.style.backgroundColor='lime';
+    pickleButton.style.backgroundImage='linear-gradient(red, yellow, green)';
 });
 btn3.addEventListener('mouseout', e=> {
+    pickleButton.style.backgroundImage='';
     pickleButton.style.backgroundColor='green';
 
 });
