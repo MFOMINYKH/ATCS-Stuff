@@ -4,63 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Tester</title>
-    <link type='stylesheet' href='styles.css'>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div id="nameOnTop" style="font-size: 50px; text-align: center; background-color:aquamarine;">
-        Max's Website
-    </div>
-    <br>
+
+<body style="background-color:lightblue">
 
 
-
-    <div class="wrapper">
-        <div class="header">
-            <h1>:: ToDo List ::</h1>
-        </div>
-        <div class="add-task">
-            <input id="new-task-input" type="text"
-            placeholder="Add A Task...">
-            <button class="add-task-btn">+</button>
-        </div>
-        <div class="task-list-header">
-            <h2>Tasks</h2>
-            <button class="remove-complete-btn">Clear Complete</button>
-        </div>
-        <div class="task-list-wrapper">
-            <ul class="task-list">
-
+    <nav class="navbar navbar-expand-lg navbar-light" style="width: 100%; background-color:transparent";>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Max Fominykh</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1358FA;">
+                  <li><a class="dropdown-item" style="color: white;" href="#">Action</a></li>
+                  <li><a class="dropdown-item" style="color: white;" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" style="color: white;" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
             </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button style="background-color:black; color: white " class="btn btn-outline-success border-0" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </div>
-    <template id="task-template">
-        <li class="task">
-            <input type="checkbox">
-            <label>
-                <span class="check-mark">&#10004;</span>
-                <span class="custom-checkbox"></span>
-            </label>
-        </li>
-    </template>
+      </nav>
 
-    <button id='myButton' style="font-size: 50px;">
-        Click Me
-    </button>
-    <button id='myBigButton' style="font-size: 50px;">
-        No Click Me
-    </button>
-    <button id='pickleButton' style="font-size: 50px;">
-        Pickle Button       
-    </button>
-    <button id='doNotClick' style="font-size: 50px;">
-        DO NOT CLICK       
-    </button>
-    <ul id="list">
-        <li class="list-item">Item 1</li>
-        <li class="list-item">Item 2</li>
-        <li class="list-item">Item 3</li>
-    </ul>
-    <script src="main.js"></script></script>
+
+
+      <!-- CONTAINER STARTS -->
+
+      <div class="container" style="margin-top: 2.5%">
+        <div class="row">
+          <div class="col-sm">
+
+
+            <div class="card" style="width: 75%;" >
+                <a href="https://www.nba.com/lakers/?tmd=1" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/1200px-Los_Angeles_Lakers_logo.svg.png" class="card-img-top" alt="..."> </a>
+                <div class="card-body">
+                  <h5 class="card-title">Best Team in the NBA</h5>
+                  <p class="card-text">Although we have been struggling recently, the Los Angeles Lakers are the greatest team in NBA history.</p>
+                  <a href="#" id="popUpButton" class="btn btn-primary">Click here to see why Nets might be better</a>
+                </div>
+              </div>
+          </div>
+
+
+
+
+          
+          <div class="col-sm">
+            <div class="accordion" id="accordionPanelsStayOpenExample" style="width: 140%; margin-left: -20.5%">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Who am I?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <strong>Hey, this is Max</strong> I'm a student/athlete from Montvale, New Jersey. Currently, I'm a senior attending Pascack-Hills Highschool. Some of my extracurriculars include swimming, piano, and boxing.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Significant Statistics
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <strong>Some defining things I have done include:</strong> <br>
+                    • 10 years of swimming competitively <br>
+                    • Former state record holder in Mixed 400 Freestyle Relay 15-18 yr<br>
+                    • 200+ hours of community service<br>
+                    • Lifeguard - CPR/AED Certified<br>
+                    • National Honors Society Member<br>
+                    • Chinese Honors Society Member<br>
+                    • Pascack Hills Class of 2022<br>
+                    • West Point Class of 2026<br>
+                    • Project Paterson Volunteer <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      If You are Further Interested...
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>You can reach me at:</strong> <br>mfominykh22@pascack.org<br>
+                      <br>
+                      <strong>You can also learn more about my places of education and work employer(s) at the folliwing links:</strong> <br> <a href="https://hills.pascack.org/" target="_blank">Pascack-Hills High School</a> <br> <a href="https://www.westpoint.edu/" target="_blank">United States Military Academy</a> <br> <a href="https://www.lifetime.life/" target="_blank">LifeTime Fitness</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+
+
+
+          <div class="col-sm">
+            <div class="card" style="width: 75%; margin-left: 24%;">
+                <a href="https://www.nba.com/nets/" target="_blank"> <img src="data:image/png;base64,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" class="card-img-top" alt="..."> </a>
+                <div class="card-body">
+                  <h5 class="card-title">Worst Team in the NBA</h5>
+                  <p class="card-text">Poverty Franchise. Lost the Ben Simmons trade because Ben Simmons obviously is not going to play (Nets should have known that, Lakers wouldn't have made that mistake) </p>
+                  <a href="#" id="nonPopUpButton" class="btn btn-primary">Why the Lakers are a better Franchise</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <div>
+          <h1 class="social-media" style="margin-left: 41.5%; margin-top: -15%">Social Media</h1>
+      </div> -->
+
+
+
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </symbol>
+        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </symbol>
+        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+      </svg>
+      
+    
+      <div id=popUp class="alert alert-warning d-flex align-items-center" role="alert" style="width: 70%;;margin-top: ; color: transparent; background-color: transparent; border-color: transparent;">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+        <div>
+          The evidence that you are trying to reach does not exist... 
+        </div>
+      </div>
+     
+      </div>
+
+
+
+
+
+
+      <script src="script.js"></script></script>
 </body>
 </html>
