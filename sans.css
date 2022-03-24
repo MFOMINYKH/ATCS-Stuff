@@ -1,0 +1,41 @@
+html{height:100%}
+body
+{
+    background-color: white;
+    background-image: url(./randomUnderTaleTestMap.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0px
+}
+
+#scrollMessage{
+    height: 500px;
+    position:absolute;
+    left: 200px;
+    bottom: 150px;
+}
+
+#messageButton{
+    position:absolute;
+    bottom: 685px;
+    left: 225px;
+    width: 60px;
+    height: 30px
+    
+}
+
+#messageBoard{
+    position: absolute;
+    bottom: 650px;
+    left: 225px;
+    height: 65px;
+}
+.player{
+    position:absolute;
+    bottom: 0px;
+    height: 100px;
+}
+
+#pos{color:white; font-size: 18pt;}
