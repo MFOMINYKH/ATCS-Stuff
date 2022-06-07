@@ -1,0 +1,63 @@
+html{height:100%}
+body
+{
+    background-color: white;
+    background-image: url(./UnderTaleSnowdinFulllMap.png);
+    background-size: 145%;
+    background-position: 0px 0px;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0px;
+}
+
+#pathMap{
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    margin: 0px;
+}
+
+.bg-music{
+    position: absolute;
+    top: 64%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#scrollMessage{
+    height: 500px;
+    position:absolute;
+    left: 200px;
+    bottom: 150px;
+}
+
+.dialouge{
+    height:400px;
+    margin-left: 67%;
+    margin-top:24.5%;
+    position: fixed;
+}
+
+#messageButton{
+    position:absolute;
+    bottom: 685px;
+    left: 225px;
+    width: 60px;
+    height: 30px
+    
+}
+
+#scroll{
+    position: absolute;
+    bottom: 600px;
+    left: 550px;
+    height: 40px;
+}
+.player{
+    position:absolute;
+    bottom: 360px;
+    height: 85px;
+}
+
+#pos{color:white; font-size: 18pt;}

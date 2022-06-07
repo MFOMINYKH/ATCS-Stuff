@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type="text/css" href="./tester.css">
+    <audio src="windsound.mp3" loop=""></audio>
+</head>
+<body id="theBody">
+
+    <canvas id="myCanvas" width="1520" height="1160" style="position: fixed; width: 145%;"></canvas>
+    <h1 id="rgba" style="position: fixed; color:white">R, G, B, A</h1>
+
+    <!-- messing around with music -->
+    <div class="bg-music">
+            <audio autoplay id="theme">
+                <source src="./FirstStep.mp3">
+            </audio>
+
+            <audio id="papersound">
+                <source src="Papersound.mp3">
+            </audio>
+
+            <audio id="vineBoomSound">
+                <source src="VineBoomSound.mp3">
+            </audio>
+
+            <audio id="talkingmusic">
+                <source src="./Gametalkingmusic.mp3">
+            </audio>
+     </div>
+
+
+
+    
+
+
+
+
+    <span id="pos" style="position: absolute"></span>
+
+    <!-- the map test -->
+    <img id="pathMap" src="./UnderTaleSnowdinPathMap.png" style="width: 145%; object-fit: cover; display: none"> 
+
+    <img id="scroll" src="8bitScroll.png">
+    <!-- <button id="messageButton" type="button" style="background-color: transparent;"></button> -->
+    
+
+
+    <img class="player" id="player"src="ForwardWalkingSans1.png">
+    <img class="player" id="back1"src="BackWalkingSans1.png" style="display:none;">
+    <img class="player" id="back2"src="BackWalkingSans2.png" style="display:none;">
+    <img class="player" id="back3"src="BackWalkingSans3.png" style="display:none;">
+    <img class="player" id="back4"src="BackWalkingSans4.png" style="display:none;">
+
+    <img class="player" id="forward1"src="ForwardWalkingSans1.png" style="display:none;">
+    <img class="player" id="forward2"src="ForwardWalkingSans2.png" style="display:none;">
+    <img class="player" id="forward3"src="ForwardWalkingSans3.png" style="display:none;">
+    <img class="player" id="forward4"src="ForwardWalkingSans4.png" style="display:none;">
+
+    <img class="player" id="right1"src="RightWalkingSans1.png" style="display:none;">
+    <img class="player" id="right2"src="RightWalkingSans2.png" style="display:none;">
+    <img class="player" id="right3"src="RightWalkingSans3.png" style="display:none;">
+    <img class="player" id="right4"src="RightWalkingSans4.png" style="display:none;">
+
+    <img class="player" id="left1"src="LeftWalkingSans1.png" style="display:none;">
+    <img class="player" id="left2"src="LeftWalkingSans2.png" style="display:none;">
+    <img class="player" id="left3"src="LeftWalkingSans3.png" style="display:none;">
+    <img class="player" id="left4"src="LeftWalkingSans4.png" style="display:none;">
+
+
+    <!-- making the scroll popup thingy -->
+    <img id="scrollMessage" src="Message1.png" style="display:none;">
+
+    <img class="dialouge" id="messageBox1" src="MessageBox1.png" style="display:none;">
+    <img class="dialouge" id="messageBox2" src="MessageBox2.png" style="display:none;">
+    <img class="dialouge" id="messageBox3" src="MessageBox3.png" style="display:none;">
+    <img class="dialouge" id="messageBox4" src="MessageBox4.png" style="display:none;">
+    <img class="dialouge" id="messageBox5" src="MessageBox5.png" style="display:none;">
+    <!-- <h1>Welcome</h1> -->
+  
+
+
+
+    <script src="tester.js"></script>
+</body>
+</html>

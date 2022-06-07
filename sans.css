@@ -10,11 +10,25 @@ body
     margin: 0px
 }
 
+.bg-music{
+    position: absolute;
+    top: 64%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
 #scrollMessage{
     height: 500px;
     position:absolute;
     left: 200px;
     bottom: 150px;
+}
+
+.dialouge{
+    height:400px;
+    margin-left: 67%;
+    margin-top:24.5%;
 }
 
 #messageButton{

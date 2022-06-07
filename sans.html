@@ -6,14 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel='stylesheet' type="text/css" href="./sans.css">
+    <audio src="windsound.mp3" loop=""></audio>
 </head>
 <body>
+
+    <!-- messing around with music -->
+    <div class="bg-music">
+            <audio controller autoplay>
+                <source src="windsound.mp3" loop="">
+            </audio>
+
+            <audio id="papersound">
+                <source src="Papersound.mp3">
+            </audio>
+
+            <audio id="vineBoomSound">
+                <source src="VineBoomSound.mp3">
+            </audio>
+     </div>
+
+    
+
+
+
+
     <span id="pos"></span>
 
     <img id="messageBoard" src="messagething.png">
-    <button id="messageButton" type="button" style="background-color: transparent;"></button>
-
-    <img id="scrollMessage" src="scrollpixel.png" style="display:none;">
+    <!-- <button id="messageButton" type="button" style="background-color: transparent;"></button> -->
+    
 
 
     <img class="player" id="player"src="ForwardWalkingSans1.png">
@@ -38,6 +59,15 @@
     <img class="player" id="left4"src="LeftWalkingSans4.png" style="display:none;">
 
 
+    <!-- making the scroll popup thingy -->
+    <img id="scrollMessage" src="Message1.png" style="display:none;">
+
+    <img class="dialouge" id="messageBox1" src="MessageBox1.png" style="display:none;">
+    <img class="dialouge" id="messageBox2" src="MessageBox2.png" style="display:none;">
+    <img class="dialouge" id="messageBox3" src="MessageBox3.png" style="display:none;">
+    <img class="dialouge" id="messageBox4" src="MessageBox4.png" style="display:none;">
+    <img class="dialouge" id="messageBox5" src="MessageBox5.png" style="display:none;">
+    <!-- <h1>Welcome</h1> -->
   
 
 

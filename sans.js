@@ -1,13 +1,25 @@
 
 const messageButton = document.getElementById('messageButton');
 const scrollThing = document.getElementById('scrollMessage');
+const messageBox1 = document.getElementById('messageBox1');
+const messageBox2 = document.getElementById('messageBox2');
+const messageBox3 = document.getElementById('messageBox3');
+const messageBox4 = document.getElementById('messageBox4');
+const messageBox5 = document.getElementById('messageBox5');
 
-messageButton.addEventListener('click', function(e){
-    if(scrollThing.style.display === "none")
-        document.getElementById('scrollMessage').style.display = "block";
-    else
-    document.getElementById('scrollMessage').style.display = "none";
-});
+//quotes conversation between sans and nicecreamguy
+let firstQuote = false;
+let secondQuote = false;
+let thirdQuote = false;
+let fourthQuote = false;
+let messageOpen = false;
+
+// messageButton.addEventListener('click', function(e){
+//     if(scrollThing.style.display === "none")
+//         document.getElementById('scrollMessage').style.display = "block";
+//     else
+//     document.getElementById('scrollMessage').style.display = "none";
+// });
 
 imgObj = document.getElementById('sansPlayer');
 var moveX = 0, moveY = 0; //This is where sans will begin
@@ -23,6 +35,8 @@ let backRotateWalk = 1;
 let forwardRotateWalk = 1;
 let rightRotateWalk = 1;
 let leftRotateWalk = 1;
+
+
 
 
 
@@ -59,6 +73,7 @@ function Control()
 {
     
         let key = event.key;
+        console.log(key);
         let player = document.getElementById('player');
 
         let back1 = document.getElementById('back1');
@@ -84,7 +99,7 @@ function Control()
         let pos = document.getElementById('pos')
     
 
-    if(key === "ArrowUp" && moveY < view_H) // up arrow key
+    if(key === "ArrowUp" && moveY < view_H && !messageOpen) // up arrow key
     {
         let forwardRotateWalk = 1;
         let rightRotateWalk = 1;
@@ -227,7 +242,7 @@ function Control()
         // }
     }
 
-    else if(key === "ArrowDown" && moveY > 0) // down arrow key
+    else if(key === "ArrowDown" && moveY > 0 && !messageOpen) // down arrow key
     {
         let backRotateWalk = 1;
         let rightRotateWalk = 1;
@@ -364,7 +379,7 @@ function Control()
         forwardRotateWalk++;
     }
 
-    else if(key === "ArrowLeft" && moveX > 0) // left arrow key
+    else if(key === "ArrowLeft" && moveX > 0 && !messageOpen) // left arrow key
     {
         let forwardRotateWalk = 1;
         let backRotateWalk = 1;
@@ -501,7 +516,7 @@ function Control()
         leftRotateWalk++;
     }
 
-    else if(key === "ArrowRight" && moveX < view_W) // right arrow key
+    else if(key === "ArrowRight" && moveX < view_W && !messageOpen) // right arrow key
     {
         let forwardRotateWalk = 1;
         let backRotateWalk = 1;
@@ -639,7 +654,98 @@ function Control()
 
     //Movement controls end here and action controls begin here
 
-    // else if(key === "ArrowRight" && moveX < view_W)
+    //open message board and close
+    else if(key === "e" && moveY > 580 && moveX > 180 && moveX < 270) {
+        if(scrollThing.style.display === "none")
+        {
+        scrollThing.style.display = "block";
+        papersound.play();
+        messageOpen=true;
+        }
+
+        else{
+            scrollThing.style.display = "none";
+            messageOpen=false;
+
+        }
+    }
+
+
+    //snow ball dialouge
+    else if(key === "e" && moveY > 420 && moveY < 540 && moveX > 705 && moveX < 855) {
+        if(messageBox1.style.display === "none")
+        {
+        messageBox1.style.display = "block";
+        vineBoomSound.play();
+        messageOpen=true;
+        }
+        
+
+        else{
+            messageBox1.style.display = "none";
+            messageOpen=false;
+
+        }
+    }
+
+    //nice cream guy dialouge
+    else if(key === "e" && moveY > 570 && moveX > 0 && moveX < 165) {
+        if(messageBox2.style.display === "none" && firstQuote === false)
+        {
+        messageBox2.style.display = "block";
+        vineBoomSound.play();
+        messageOpen=true;
+        firstQuote = true;
+        
+        }
+
+        else if(messageBox3.style.display === "none" && secondQuote === false)
+        {
+        messageBox3.style.display = "block";
+        vineBoomSound.play();
+        messageOpen=true;
+        secondQuote = true;
+        messageBox2.style.display = "none";
+        
+        }
+
+        else if(messageBox4.style.display === "none" && thirdQuote === false)
+        {
+        messageBox4.style.display = "block";
+        vineBoomSound.play();
+        messageOpen=true;
+        thirdQuote = true;
+        messageBox3.style.display = "none";
+        
+        }
+
+        else if(messageBox5.style.display === "none" && fourthQuote === false)
+        {
+        messageBox5.style.display = "block";
+        vineBoomSound.play();
+        messageOpen=true;
+        fourthQuote = true;
+        messageBox4.style.display = "none";
+        
+        }
+
+        else{
+            messageBox5.style.display = "none";
+            messageOpen=false;
+            firstQuote = false;
+            secondQuote = false;
+            thirdQuote = false;
+            fourthQuote = false;
+
+        }
+    }
+
+
+
+
+
+
+
 
     else
     {
@@ -650,7 +756,7 @@ function Control()
         downMove = 0;
         leftMove = 0;
         rightMove = 0;
-        console.log(key);
+
         
     }
 }
